@@ -1,6 +1,6 @@
 
 import React from "react";
-import { MyButton } from './lib/components/index.js';
+import { MyButton } from './lib';
 
 const App = () => {
 
