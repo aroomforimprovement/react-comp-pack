@@ -46,8 +46,8 @@
   },
   "exports": {
     "react-comp-pack": {
-      "import": "./lib/index.js",
-      "require": "./lib/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     }
   },
   "browserslist": {
