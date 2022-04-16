@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-
 const config = {
   entry: './src/lib/index.js',
   output: {
@@ -16,6 +15,13 @@ const config = {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   },

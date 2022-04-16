@@ -1,0 +1,27 @@
+.butt {
+    padding: 12px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(180, 180, 180);
+    color: rgb(80, 80, 80);
+    border-radius: 0.5vh;
+}
+
+.butt:hover{
+    transform: scale(1.02);
+}
+
+.butt:active{
+    transform: scale(1);
+}
+
+.shade {
+    box-shadow: 1px 1px 3px;
+}
+
+.shade:hover{
+    box-shadow: 2px 2px 5px;
+}
+
+.shade:active{
+    box-shadow: 0px 0px;
+}
