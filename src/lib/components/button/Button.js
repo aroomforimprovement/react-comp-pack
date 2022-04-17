@@ -1,11 +1,16 @@
 import React from 'react';
-import './button.css';
+import './button.scss';
 
-export const Button = ({btnText}) => {
+export const Button = ({btnText, type}) => {
     return (
         <button 
-            className='butt shade' 
-            onClick={() => {console.log("It worked!")}}
+            className={`butt shade ${type}`} 
+            onClick={() => {
+                console.log(`It worked! (${
+                    type 
+                    ? type 
+                    : 'standard'})`
+                )}}
         >
             {btnText}
         </button>
