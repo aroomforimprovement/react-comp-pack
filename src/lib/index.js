@@ -1,3 +1,3 @@
-import { Button } from './components/Button';
+import { Button } from './components/button/Button';
 
 export const MyButton = Button;
