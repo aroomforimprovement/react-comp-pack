@@ -5,7 +5,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: 'MyButton',
+    library: 'Button',
     libraryTarget: 'umd',
     publicPath: '/dist'
   },

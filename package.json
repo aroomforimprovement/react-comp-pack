@@ -1,6 +1,6 @@
 {
 	"name": "react-comp-pack",
-	"version": "1.0.12",
+	"version": "1.0.15",
 	"description": "A package of react components",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -62,8 +62,8 @@
 	},
 	"exports": {
 		"react-comp-pack": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.js"
+			"import": "./lib/index.js",
+			"require": "./lib/index.js"
 		}
 	}
 }
