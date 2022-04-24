@@ -22,20 +22,25 @@ const App = () => {
     const [toasts, setToasts] = useState([]);
 
     const handleAdd = () => {
-        setToasts([...toasts], {
+        const ts = [...toasts];
+        ts.push({
             id: toasts.length, 
-            message: `This id system is unsustainable: ${toasts.length}`});
+            message: `This id system is unsustainable: ${toasts.length}`
+        });
+        setToasts(ts);
     }
 
     const handleRemove = () => {
-        const ts = [...toasts];
-        ts.pop(0);
+        let ts = [...toasts];
+        ts.pop();
+        setToasts(ts);
+        console.log(toasts);
     }
 
     return(
         <div>
-            <Button btnText={'Demo button'} onClick={handleAdd}/>
-            <Button btnText={'Alternate button'} type={'alter'} onClick={handleRemove}/>
+            <Button btnText={'Add toast'} onClick={handleAdd}/>
+            <Button btnText={'Remove toast'} type={'alter'} onClick={handleRemove}/>
             <ToastRack toasts={toasts} />
         </div>
     );
