@@ -1,0 +1,29 @@
+
+.toast-rack{
+    position: fixed;
+    min-width: 100vw;
+    z-index: 1001;
+    top: 1vh;
+    left: 1vw;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'sans-serif';
+    background-color: rgba(255, 255, 255, 0);
+    pointer-events: none;
+}
+
+.toast-slice{
+    pointer-events: all;
+    position: relative;
+    display: block;
+    min-height: 50px;
+    max-height: 30vh;
+    width: 20rem;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: rgba(40, 40, 40, 0.8);
+}
