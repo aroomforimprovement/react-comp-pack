@@ -10,7 +10,8 @@ export const Button = ({btnText, type}) => {
                     type 
                     ? type 
                     : 'standard'})`
-                )}}
+                )
+            }}
         >
             {btnText}
         </button>
