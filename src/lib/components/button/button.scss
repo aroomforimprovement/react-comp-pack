@@ -24,11 +24,11 @@
 }
 
 .shade {
-    box-shadow: 1px 1px 3px;
+    box-shadow: 1px 1px 3px colours.$txt-standard;
 }
 
 .shade:hover{
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px colours.$txt-standard;
 }
 
 .shade:active{
