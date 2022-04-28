@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Button, ToastRack } from './lib';
+import { Button, ToastRack, useToastRack } from './lib';
 
 const dummyToasts = [
     {
@@ -18,30 +18,22 @@ const dummyToasts = [
 ];
 
 const App = () => {
-
-    const [toasts, setToasts] = useState([]);
-
+    const toast = useToastRack();
     const handleAdd = () => {
-        const ts = [...toasts];
-        ts.push({
-            id: toasts.length, 
-            message: `This id system is unsustainable: ${toasts.length}`
-        });
-        setToasts(ts);
+        const id = toast.fire({message: "Hi. I am toast"});
+        console.log(id);
     }
 
     const handleRemove = () => {
-        let ts = [...toasts];
-        ts.pop();
-        setToasts(ts);
-        console.log(toasts);
+        toast.dismiss(toast?.toasts[0]?.id);
+        console.dir(toast?.toasts);
     }
 
     return(
         <div>
             <Button btnText={'Add toast'} onClick={handleAdd}/>
             <Button btnText={'Remove toast'} type={'alter'} onClick={handleRemove}/>
-            <ToastRack toasts={toasts} />
+            <ToastRack />
         </div>
     );
     
