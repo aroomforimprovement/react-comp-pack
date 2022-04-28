@@ -1,21 +1,6 @@
 
-import React, { useState } from "react";
+import React from "react";
 import { Button, ToastRack, useToastRack } from './lib';
-
-const dummyToasts = [
-    {
-        id: 0,
-        message: "The first toast"
-    },
-    {
-        id: 1,
-        message: "The second toast"
-    },
-    {
-        id: 2,
-        message: "The third toast"
-    }
-];
 
 const App = () => {
     const toast = useToastRack();
