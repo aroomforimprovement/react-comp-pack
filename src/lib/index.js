@@ -1,2 +1,2 @@
 export { Button } from './components/button/Button';
-export { ToastRack } from './components/toast/Toast';
+export { ToastRack, useToastRack  } from './components/toast/Toast';
