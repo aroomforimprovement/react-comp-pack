@@ -3,13 +3,16 @@
     position: fixed;
     min-width: 100vw;
     z-index: 1001;
-    top: 2vh;
-    left: 2vw;
+
+}
+
+.toast-slots{
+    position:fixed;
     margin: 0px;
     padding: 0px;
+    pointer-events: none;    
     font-family: 'sans-serif';
     background-color: rgba(255, 255, 255, 0);
-    pointer-events: none;
 }
 
 .toast-slice{
@@ -26,4 +29,51 @@
     border-radius: 0.5rem;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     color: rgba(40, 40, 40, 0.8);
+}
+
+.top-center {
+    top: 1vh;
+    left: 50%;
+    margin-left: -10rem;
+}
+
+.top-left{
+    top: 1vh;
+    left:0px;
+}
+
+.top-right {
+    top: 1vh;
+    right:1vw;
+}
+
+.middle-left{
+    top: 40vh;
+}
+
+.middle-center{
+    top: 40vh;
+    left: 50%;
+    margin-left:-10rem;
+}
+
+.middle-right{
+    top: 40vh;
+    right:1vw;
+}
+
+.bottom-left {
+    bottom: 1vh;
+    left:0px;
+}
+
+.bottom-right{
+    bottom: 1vh;
+    right:1vw;
+}
+
+.bottom-center{
+    bottom: 0px;
+    left:50%;
+    margin-left:-10rem;
 }

@@ -4,8 +4,11 @@ import { Button, ToastRack, useToastRack } from './lib';
 
 const App = () => {
     const toast = useToastRack();
-    const handleAdd = () => {
-        const id = toast.fire({message: "Hi. I am toast"});
+    const handleAdd = (pos) => {
+        const id = toast.fire({
+            message: `Hi, I am ${pos}`,
+            position: pos ? pos : 'top-left'
+        });
         console.log(id);
     }
 
@@ -16,7 +19,8 @@ const App = () => {
 
     return(
         <div>
-            <Button btnText={'Add toast'} onClick={handleAdd}/>
+            <Button btnText={'Top right'} onClick={() => handleAdd('top-right')}/>
+            <Button btnText={'Bottom left'} onClick={() => handleAdd('bottom-left')}/>
             <Button btnText={'Remove toast'} type={'alter'} onClick={handleRemove}/>
             <ToastRack />
         </div>
